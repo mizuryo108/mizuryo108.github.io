@@ -1,32 +1,152 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="static/css/style.css">
-<html lang="ja">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>清水綾太のプロフィールページ</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ryota Shimizu Profile</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/icon.ico" />
 </head>
 
-<body class="wrap">
-    <div class="content">
-        <h1 class="heading-lv1 text-center">Profile</h1>
-        <figure class="profile-image">
-            <img src="static/images/profile.jpg" alt="清水 綾太のプロフィール画像" width="300" height="300">
-        </figure>
+<body>
+  <div class="wrapper">
 
-        <h2 class="heading-lv2 heading-margin text-center">清水 綾太</h2>
-        <p class="text text-center">愛知工業大学 情報科学部 情報科学科<br />コンピュータシステム専攻 自然言語処理学研究室所属の清水綾太です。</p>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">Ryota Shimizu</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <!-- <li class="gnav-item"><a href="#skill">SKILL</a></li> -->
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
 
-        <h3 class="heading-lv3 heading-margin text-center">自己紹介</h3>
-        <p class="text text-center">趣味はウッドベースで、コンボジャズを演奏することです。
-        </p>
+    <main class="content">
 
-        <p class="text text-center"><a href="./links.html">Linksページへ</a></p>
-        <h3 class="heading-lv3 heading-margin text-center">連絡方法</h3>
-        <p class="text text-center"><a href="mailto:k22066kk@aitech.ac.jp">メール: k22066kk@aitech.ac.jp</a></p>
-    </div>
+      <!-- split -->
+      <div class="split">
+        <div class="split-body">
+          <p class="split-title">Ryota<br>Shimizu</p>
+          <p class="split-text">
+            愛知工業大学 情報科学部 情報科学科<br>
+            自然言語処理学研究室所属の清水綾太です。<br>
+            趣味はウッドベースを演奏することです。
+          </p>
+        </div>
+        <div class="split-img"></div>
+      </div>
+      <!-- /split -->
+
+      <!-- skill -->
+      <!-- <section class="skill section" id="skill">
+        <div class="container">
+          <h2 class="title">SKILL</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML5/CSS3</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">WordPress</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Photoshop</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- /skill -->
+
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="container">
+          <h2 class="title">WORKS</h2>
+          <div class="works-list">
+            <a class="works-item" href="works-book_management.html">
+              <div class="works-img"><img src="img/BookManagement/searchresult.png" alt="" /></div>
+              <p class="works-name">書籍管理アプリ</p>
+              <p class="works-info">groupwork/python</p>
+            </a>
+            <!-- <a class="works-item" href="works-simulated_earthquake.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a> -->
+            <!-- <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design</p>
+            </a> -->
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="title">CONTACT</h2>
+          <div id="sns-btn">
+            <ul>
+              <li>
+                <a href="https://github.com/mizuryo108" id="GitHub"><img src="img/github.png"></a>
+              </li>
+              <li>
+                <a href="mailto:k22066kk@aitech.ac.jp" id="Mail"><img src="img/mail.png"></a>
+              </li>
+            </ul>
+          </div>
+      </section>
+      <!-- /contact -->
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Ryota Shimizu</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
 </body>
 
 </html>
